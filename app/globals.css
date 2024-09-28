@@ -2,26 +2,65 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Root Variables */
 :root {
   --background: #ffffff;
   --foreground: #171717;
 }
 
-/* @media (prefers-color-scheme: dark) {
+/* Dark Mode Support (optional) */
+@media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
   }
-} */
+}
 
+/* Global Styles */
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  @apply text-foreground bg-background font-sans; /* Apply Tailwind utility classes */
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+/* Header Styles */
+.header {
+  @apply relative w-full h-[20vh] overflow-hidden bg-black; /* Tailwind utility classes */
+}
+
+.logo-container {
+  @apply absolute inset-0; /* Positions logo container to cover entire header area */
+}
+
+.logo {
+  @apply w-full h-full object-contain; /* Makes logo responsive */
+}
+
+/* Full Page Wrapper */
+.full-page-wrapper {
+  @apply bg-white min-h-screen min-w-full flex justify-center; /* Ensures full-page layout */
+}
+
+/* Pitch Container */
+.pitch-container {
+  @apply bg-black p-8 flex flex-col items-center w-[60%]; /* Padding and flex properties */
+}
+
+/* Pitch Header */
+.pitch-header {
+  @apply text-2xl font-bold text-left text-gray-400; /* Font and text properties */
+}
+
+/* Pitch Content */
+.pitch-content {
+  @apply text-lg font-mono text-gray-400 text-left mt-4; /* Text styles */
+}
+
+/* Example Pitch */
+.example-pitch {
+  @apply text-lg font-mono text-left mt-4; /* Text styles */
 }

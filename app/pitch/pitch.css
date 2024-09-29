@@ -1,0 +1,49 @@
+/* Container Styles */
+.pitch-container {
+    @apply flex justify-center
+    items-center
+    min-h-screen
+    bg-black
+    w-full;
+  }
+  
+  /* Card Styles */
+  .pitch-card {
+    @apply
+    bg-black
+    p-8 
+    flex flex-col
+    items-start
+    w-3/4 md:w-2/3 lg:w-1/2 
+    rounded-lg
+    shadow-lg
+    font-light;
+  }
+  
+  /* Section Header Styles */
+  .pitch-section-header {
+    @apply text-3xl font-bold text-gray-500 mb-4; 
+  }
+  
+  /* Section Text Styles */
+  .pitch-section-text {
+    @apply text-base mb-6; 
+    color: #A9A9A9;
+  }
+  
+  /* List Styles */
+  .pitch-list {
+    @apply list-decimal list-inside pl-7 pt-2 pb-2; 
+  }
+  
+  /* TL;DR List Styles */
+  .pitch-tldr-list {
+    @apply list-decimal list-inside pl-7;
+  }
+  
+  /* Ask Section Styles */
+  .pitch-ask {
+    @apply text-base;
+    color: #A9A9A9;
+  }
+  

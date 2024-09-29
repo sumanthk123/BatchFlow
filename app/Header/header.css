@@ -1,0 +1,17 @@
+/* Header Styles */
+.header-container {
+    @apply
+    relative
+    w-full h-20
+    overflow-hidden
+    bg-black;
+}
+
+/* Logo Styles */
+.header-logo {
+    @apply
+    absolute top-4 left-0 right-0 bottom-0 
+    flex items-center
+    justify-center
+    bg-black; 
+}

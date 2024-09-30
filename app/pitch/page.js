@@ -29,7 +29,9 @@ export default function Pitch() {
             Our startup aims to create a centralized command center and version control system specifically designed for Large Language Models (LLMs). This platform will function as a GitHub-style repository for LLMs, allowing small companies and software developers to store, evaluate, and monitor their LLMs across multiple versions.
             <br />
             <br />
-            With the increasing complexity and prevalence of LLMs, the need for efficient model management and evaluation tools has become crucial. Our solution will also provide an intuitive dashboard that displays essential metrics, such as accuracy, model performance, and version history, allowing users to make data-driven decisions about their models.
+            With the increasing complexity and prevalence of LLMs, the need for efficient model management and evaluation tools has become crucial. 
+            Our solution will also provide an intuitive dashboard that displays essential metrics, such as accuracy, model performance, and version history, 
+            allowing users to make data-driven decisions about their models.
           </div>
 
           <div className="pitch-section-header">

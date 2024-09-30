@@ -1,7 +1,20 @@
 import './pitch.css'; // Import the new CSS file
 import Header from "../Header/page";
+import Image from 'next/image';
+import eval_wireframe from '../public/batchflow-eval-wireframe.png';
+import VersionPictureContent from './versionPictureContent';
+import EvalPictureContent from './evalPictureContent';
 
 export default function Pitch() {
+  // var onClick = () => {
+  //   if (typeof window !== 'undefined') {
+  //     const modal = document.querySelector('#model');
+  //     modal.show();
+  //   }
+    
+  // };
+  const openModal = () => setIsModalOpen(true);
+  // const closeModal = () => setIsModalOpen(false);
   return (
     <>
       <Header />
@@ -41,6 +54,15 @@ export default function Pitch() {
                 Integrating a version control system to easily access model analytics and compare effectiveness of different prompting techniques.
               </li>
             </ul>
+            <br />
+            <span className='font-bold'>Evaluation Wireframe:</span>
+
+            <EvalPictureContent/>
+            <br/>
+            <span className='font-bold'>Version Access Wireframe:</span>
+            <br />
+            <VersionPictureContent/>
+
             <br />
             With the increasing complexity and prevalence of LLMs, the need for efficient model management and evaluation tools has become crucial. 
             Our solution will also provide an intuitive dashboard that displays essential metrics, such as accuracy, model performance, and version history, 

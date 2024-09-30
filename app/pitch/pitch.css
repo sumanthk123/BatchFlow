@@ -7,6 +7,12 @@
     bg-white
     w-full;
   }
+
+  .picture-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   
   /* Card Styles */
   .pitch-card {
